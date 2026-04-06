@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KJR's Portfolio</title>
+  <script src="scripts/scripts.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+
+</head>
+
+<body class="bg-[#0a0a0a] text-white">
+
+  <!-- Navbar -->
+  <nav class="bg-[#0a0a0a]/80 backdrop-blur border-b border-[#39FF14]/20 fixed w-full top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-[#39FF14]">KJR</h1>
+      <ul class="flex gap-6 items-center text-gray-300">
+        <li><a href="#hero" class="hover:text-[#39FF14] transition">Home</a></li>
+        <li><a href="#tech" class="hover:text-[#39FF14] transition">About Me</a></li>
+        <li><a href="#projects" class="hover:text-[#39FF14] transition">Projects</a></li>
+        <li><a href="#contact" class="hover:text-[#39FF14] transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="h-screen flex items-center justify-center text-center px-4">
+    <div>
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">
+        Hi, I'm <span class="text-[#39FF14]">Kirby Jayrich R. Calampinay</span>
+      </h2>
+      <p class="text-lg md:text-xl mb-6 text-gray-400">Web Developer</p>
+
+      <a href="#projects" class="neon-btn">
+        View My Work
+        <span></span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- About me! -->
+  <section id="tech" class="py-16 max-w-6xl mx-auto px-6 text-center">
+
+  <h2 class="text-3xl font-bold mb-6 text-[#39FF14]">About Me</h2>
+  <p class="text-gray-400 max-w-2xl mx-auto leading-relaxed mb-10">
+   I’m an aspiring full stack developer with experience in both front-end and back-end development. I focus on building modern, user-friendly applications and solving real-world problems through technology.
+  </p>
+
+  <h3 class="text-xl font-semibold mb-6 text-[#39FF14]">Tech Stack</h3>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+    <div class="bg-[#111] p-6 rounded border border-[#39FF14]/20 hover:shadow-[0_0_15px_#39FF14] transition">HTML</div>
+      <div class="bg-[#111] p-6 rounded border border-[#39FF14]/20 hover:shadow-[0_0_15px_#39FF14] transition">CSS</div>
+      <div class="bg-[#111] p-6 rounded border border-[#39FF14]/20 hover:shadow-[0_0_15px_#39FF14] transition">JavaScript</div>
+      <div class="bg-[#111] p-6 rounded border border-[#39FF14]/20 hover:shadow-[0_0_15px_#39FF14] transition">React</div>
+      <div class="bg-[#111] p-6 rounded border border-[#39FF14]/20 hover:shadow-[0_0_15px_#39FF14] transition">PHP</div>
+      <div class="bg-[#111] p-6 rounded border border-[#39FF14]/20 hover:shadow-[0_0_15px_#39FF14] transition">MySQL</div>
+      <div class="bg-[#111] p-6 rounded border border-[#39FF14]/20 hover:shadow-[0_0_15px_#39FF14] transition">Flutter</div>
+      <div class="bg-[#111] p-6 rounded border border-[#39FF14]/20 hover:shadow-[0_0_15px_#39FF14] transition">Tailwind</div>
+  </div>
+
+</section>
+
+ <!-- Projects -->
+<section id="projects" class="py-16 bg-[#0f0f0f]">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-8 text-center text-[#39FF14]">Projects</h2>
+    <div class="flex flex-wrap justify-center gap-6">
+
+      <!-- Card 1 -->
+      <div onclick="openPopup(
+        'Capstone Project: ChariSeek',
+        'ChariSeek: BENRO App is a platform for volunteers to engage in which aims to address the issues of volunteer engagement within the city of Bacolod. It tries to bridge the gap between volunteers and charitable organizations that focus on environmental initiatives such as but not limited to tree planting and cleanup drives. The platform has both a mobile and web application that helps volunteers discover, register for, and participate in events at the same time it enables organizations to create and manage events. The key features for volunteers include QR code-based attendance tracking, an incentive-based point system, and the reporting of unclean areas.',
+        ['HTML', 'CSS', 'Flutter', 'PHP', 'MySQL'],
+        [ {label: 'GitHub', url: 'https://github.com/TisMeRibky/ChariSeekWeb'}],
+        ['pics/Chariseek/C1.png', 'pics/Chariseek/C2.png', 'pics/Chariseek/C3.png']
+        )"
+        class="reticle w-80 relative bg-[#111] p-6 rounded border border-[#39FF14]/20 hover:-translate-y-2 transition cursor-pointer">
+
+        <!-- corners -->
+        <span class="corner"></span>
+        <span class="corner"></span>
+        <span class="corner"></span>
+        <span class="corner"></span>
+
+       <!-- Image box -->
+      <div class="w-full h-40 overflow-hidden rounded-lg mb-4 bg-blue-500">
+        <img src="pics/Chariseek/C1.png" alt="Project 1" class="w-full h-full object-cover">
+      </div>
+      <span class="absolute top-3 left-3 text-xs px-2 py-1 rounded-full bg-[#39FF14]/10 text-[#39FF14] border border-[#39FF14]/40">✓ Completed</span>
+      <h3 class="font-bold text-xl mb-2 text-white">Capstone Project: ChariSeek</h3>
+      <p class="text-sm text-gray-400">My capstone project for the environmental division of our government here in Bacolod City.</p>
+    </div>
+
+      <!-- Card 2 -->
+      <div onclick="openPopup(
+        'Pound For Pound Gym Management System',
+        'Pound For Pound Gym Management System is a web application designed to streamline gym operations and enhance member management. It offers features such as member registration, class scheduling, attendance tracking, and payment processing. The system provides an intuitive interface for gym staff to manage memberships, track member progress, and generate reports. ',
+        ['React', 'PHP', 'MySQL', 'Tailwind'],
+        [{label: 'GitHub', url: 'https://github.com/russgards03/pound4pound'}],
+        ['pics/P4P/C1.png', 'pics/P4P/C2.png', 'pics/P4P/C3.png']
+        )"
+       class="reticle w-80 relative bg-[#111] p-6 rounded border border-[#39FF14]/20 hover:-translate-y-2 transition cursor-pointer">
+
+        <span class="corner"></span>
+        <span class="corner"></span>
+        <span class="corner"></span>
+        <span class="corner"></span>
+
+        
+       <!-- Image box -->
+      <div class="w-full h-40 overflow-hidden rounded-lg mb-4 bg-blue-500 relative">
+      <img src="pics/P4P/C1.png" alt="Project 2" class="w-full h-full object-cover">
+      
+    </div>
+      <span class="absolute top-3 left-3 text-xs px-2 py-1 rounded-full bg-yellow-400/10 text-yellow-400 border border-yellow-400/40">⟳ Ongoing</span>
+      <h3 class="font-bold text-xl mb-2 text-white">Pound For Pound Gym Management System</h3>
+      <p class="text-sm text-gray-400">A web application for managing gym operations and member information.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Design Work -->
+<section id="design" class="py-16 max-w-6xl mx-auto px-6">
+  <h2 class="text-3xl font-bold mb-2 text-center text-[#39FF14]">Design Work</h2>
+  <p class="text-center text-gray-500 text-sm mb-8">Menus, logos, wireframes & more</p>
+  <div class="columns-2 md:columns-3 gap-4 space-y-4">
+
+    <!-- Wireframe Carousel -->
+    <div class="break-inside-avoid">
+      <div class="relative w-full bg-[#0a0a0a] rounded border border-[#39FF14]/20 overflow-hidden" style="height:420px;">
+        <div id="wire-slides" class="flex h-full transition-transform duration-300" style="width:500%;">
+          <div style="width:20%;height:100%;flex-shrink:0;overflow:hidden;">
+            <img src="pics/Wireframe/wire1.png" onclick="zoomImage(this.src)" style="cursor:zoom-in;width:100%;height:100%;object-fit:cover;object-position:top;">
+          </div>
+          <div style="width:20%;height:100%;flex-shrink:0;overflow:hidden;">
+            <img src="pics/Wireframe/wire2.png" onclick="zoomImage(this.src)" style="cursor:zoom-in;width:100%;height:100%;object-fit:cover;object-position:top;">
+          </div>
+          <div style="width:20%;height:100%;flex-shrink:0;overflow:hidden;">
+            <img src="pics/Wireframe/wire3.png" onclick="zoomImage(this.src)" style="cursor:zoom-in;width:100%;height:100%;object-fit:cover;object-position:top;">
+          </div>
+          <div style="width:20%;height:100%;flex-shrink:0;overflow:hidden;">
+            <img src="pics/Wireframe/wire4.png" onclick="zoomImage(this.src)" style="cursor:zoom-in;width:100%;height:100%;object-fit:cover;object-position:top;">
+          </div>
+          <div style="width:20%;height:100%;flex-shrink:0;overflow:hidden;">
+            <img src="pics/Wireframe/wire5.png" onclick="zoomImage(this.src)" style="cursor:zoom-in;width:100%;height:100%;object-fit:cover;object-position:top;">
+          </div>
+        </div>
+        <!-- Arrows -->
+        <button onclick="slideWire(-1)" class="absolute left-2 top-1/2 -translate-y-1/2 text-[#39FF14] bg-black/60 rounded px-2 py-1 text-lg hover:bg-black">‹</button>
+        <button onclick="slideWire(1)"  class="absolute right-2 top-1/2 -translate-y-1/2 text-[#39FF14] bg-black/60 rounded px-2 py-1 text-lg hover:bg-black">›</button>
+        <!-- Dots -->
+        <div id="wire-dots" class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1">
+          <div class="w-2 h-2 rounded-full bg-[#39FF14]"></div>
+          <div class="w-2 h-2 rounded-full bg-gray-600"></div>
+          <div class="w-2 h-2 rounded-full bg-gray-600"></div>
+          <div class="w-2 h-2 rounded-full bg-gray-600"></div>
+          <div class="w-2 h-2 rounded-full bg-gray-600"></div>
+        </div>
+      </div>
+      <p class="text-xs text-gray-500 mt-1">UI Wireframe — Figma</p>
+    </div>
+
+    <div class="break-inside-avoid cursor-pointer" onclick="zoomImage('pics/MBLogo.png')">
+      <img src="pics/MBLogo.png" class="w-full rounded border border-[#39FF14]/20 hover:border-[#39FF14] transition">
+      <p class="text-xs text-gray-500 mt-1">Logo Design - Canva
+      </p>
+    </div>
+
+    <div class="break-inside-avoid cursor-pointer flex flex-col items-center" onclick="zoomImage('pics/Bmark1.png')">
+    <img src="pics/Bmark1.png" style="width:160px;" class="rounded border border-[#39FF14]/20 hover:border-[#39FF14] transition">
+    <p class="text-xs text-gray-500 mt-1"> Infographic Bookmark — Canva</p>
+  </div>
+
+    <div class="break-inside-avoid cursor-pointer flex flex-col items-center" onclick="zoomImage('pics/Bmark2.png')">
+    <img src="pics/Bmark2.png" style="width:160px;" class="rounded border border-[#39FF14]/20 hover:border-[#39FF14] transition">
+    <p class="text-xs text-gray-500 mt-1">Infographic Bookmark — Canva</p>
+  </div>
+
+  </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 max-w-3xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-8 text-center text-[#39FF14]">Contact Me</h2>
+
+    <!-- Success/Error Messages -->
+    <div data-fs-success class="mb-4 p-3 rounded bg-green-500/10 border border-green-500/20 text-green-400 hidden"></div>
+    <div data-fs-error class="mb-4 p-3 rounded bg-red-500/10 border border-red-500/20 text-red-400 hidden"></div>
+
+    <form id="contact-form" class="bg-[#111] p-6 rounded border border-[#39FF14]/20 space-y-4">
+      <div>
+        <input type="text" name="name" placeholder="Your Name" data-fs-field class="w-full p-3 bg-[#0a0a0a] border border-gray-700 rounded text-white focus:border-[#39FF14] transition" required />
+        <span data-fs-error="name" class="text-red-400 text-sm mt-1 block"></span>
+      </div>
+
+      <div>
+        <input type="email" name="email" placeholder="Your Email" data-fs-field class="w-full p-3 bg-[#0a0a0a] border border-gray-700 rounded text-white focus:border-[#39FF14] transition" required />
+        <span data-fs-error="email" class="text-red-400 text-sm mt-1 block"></span>
+      </div>
+
+      <div>
+        <textarea name="message" placeholder="Your Message" data-fs-field class="w-full p-3 bg-[#0a0a0a] border border-gray-700 rounded text-white focus:border-[#39FF14] transition resize-none" rows="4" required></textarea>
+        <span data-fs-error="message" class="text-red-400 text-sm mt-1 block"></span>
+      </div>
+
+      <button type="submit" data-fs-submit-btn class="neon-btn">
+        Send Message
+        <span></span>
+      </button>
+    </form>
+
+    <script>
+      formspree('initForm', { formElement: '#contact-form', formId: 'xgoprrar' });
+    </script>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500">
+    © 2026 Kirby Jayrich R. Calampinay
+  </footer>
+  
+
+<div id="popup" class="popup">
+  <div class="relative bg-[#111] rounded border border-[#39FF14]/20 w-full max-w-3xl mx-4">
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <!-- Header bar -->
+    <div class="border-b border-[#39FF14]/20 px-6 py-4 flex justify-between items-center">
+      <h2 id="popup-title" class="text-[#39FF14] text-2xl font-bold">Project Title</h2>
+      <button onclick="closePopup()" class="hover:text-[#39FF14] transition">Close <span></span></button>
+    </div>
+
+   <!-- Body: stacked layout -->
+<div class="flex flex-col gap-4 p-6">
+
+  <!-- Full width carousel -->
+  <div class="relative w-full h-64 bg-[#0a0a0a] rounded-lg overflow-hidden border border-[#39FF14]/20">
+    <div id="popup-slides" class="flex h-full transition-transform duration-300">
+      <!-- slides injected by JS -->
+    </div>
+    <button onclick="slideCarousel(-1)" class="absolute left-2 top-1/2 -translate-y-1/2 text-[#39FF14] bg-black/60 rounded px-2 py-1 text-lg hover:bg-black">‹</button>
+    <button onclick="slideCarousel(1)"  class="absolute right-2 top-1/2 -translate-y-1/2 text-[#39FF14] bg-black/60 rounded px-2 py-1 text-lg hover:bg-black">›</button>
+    <div id="popup-dots" class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1"></div>
+  </div>
+
+  <!-- Description -->
+  <p id="popup-desc" class="text-gray-400 text-sm leading-relaxed">Project description here...</p>
+
+  <!-- Bottom row -->
+  <div class="flex justify-between items-end mt-auto pt-4 border-t border-[#39FF14]/20">
+
+    <!-- Tech Stack -->
+    <div>
+      <h3 class="text-[#39FF14] text-sm font-semibold uppercase tracking-widest mb-2">Tech Stack</h3>
+      <div id="popup-tech" class="flex flex-wrap gap-2">
+      </div>
+    </div>
+
+    <!-- Links -->
+    <div class="text-right">
+      <h3 class="text-[#39FF14] text-sm font-semibold uppercase tracking-widest mb-2">Links</h3>
+      <div id="popup-links" class="flex flex-row gap-2 justify-end">
+        <!-- links injected by JS -->
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+</body>
+</html>
